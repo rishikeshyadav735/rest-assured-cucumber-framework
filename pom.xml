@@ -46,9 +46,6 @@
                                 <!-- supports wildcard or name pattern -->
                                 <param>**/*.json</param>
                             </jsonFiles>
-                            <!-- optional, defaults to outputDirectory if not specified -->
-                      
-                            <parallelTesting>false</parallelTesting>
                             <!-- optional, set true to group features by its Ids -->
                             <mergeFeaturesById>false</mergeFeaturesById>
                             <!-- optional, set true to get a final report with latest results of the same test from different test runs -->
@@ -70,8 +67,16 @@
     <artifactId>cucumber-java</artifactId>
     <version>4.8.0</version>
 </dependency>
+      <!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-all -->
+      <dependency>
+          <groupId>org.codehaus.groovy</groupId>
+          <artifactId>groovy-all</artifactId>
+          <version>3.0.21</version>
+          <type>pom</type>
+      </dependency>
 
-<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+
+      <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
 <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-junit</artifactId>
